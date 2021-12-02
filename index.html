@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+   	<meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>El violín</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+      <script type="text/javascript">
+			function mostrarInicio() {
+				document.getElementById('inicio').style.display = 'block';
+				document.getElementById('historia').style.display = 'none';
+				document.getElementById('partes').style.display = 'none';
+				document.getElementById('artistas').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+
+			function mostrarHistoria() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('historia').style.display = 'block';
+				document.getElementById('partes').style.display = 'none';
+				document.getElementById('artistas').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarPartes() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('historia').style.display = 'none';
+				document.getElementById('partes').style.display = 'block';
+				document.getElementById('artistas').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarArtistas() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('historia').style.display = 'none';
+				document.getElementById('partes').style.display = 'none';
+				document.getElementById('artistas').style.display = 'block';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarResena() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('historia').style.display = 'none';
+				document.getElementById('partes').style.display = 'none';
+				document.getElementById('artistas').style.display = 'none';
+				document.getElementById('resena').style.display = 'block';
+			}
+		</script>
+	</head>
+
+    <body>
+   	  <div class="hide">
+    			<i class="fa fa-bars" aria-hidden="true"></i><img src="img/menu.png" width="50px"/>
+  			</div>
+  			<nav>
+			<ul>
+    			<li><a href="javascript:void(0);" onclick="mostrarInicio();">Inicio</a></li>
+            <li><a href="javascript:void(0);" onclick="mostrarHistoria();">Historia</a></li>
+            <li><a href="javascript:void(0);" onclick="mostrarPartes();">Partes</a></li>
+            <li><a href="javascript:void(0);" onclick="mostrarArtistas();">Artistas</a></li>
+            <li><a href="javascript:void(0);" onclick="mostrarResena();">Reseña/Bibliografía</a></li>
+  			</ul>
+		</nav>
+		<script>
+			$(".hide").on('click', function() {
+	      	$("nav ul").toggle('slow');
+   	 	})
+  		</script>
+  		
+
+        <main>
+
+            <section id="inicio">
+					<div id="titulo_inicial">
+	                <h1>El violín</h1>
+	            </div>
+	            <div id="texto_inicial">
+                    <p>
+	                    El violín, es un instrumento increíble y maravilloso que ha formado parte de nuestra civilización por tantos siglos; es admirado por los sonidos que pueden interpretarse cuando se tocan sus cuerdas. Las personas observando su madera y sus colores clásicos, sienten atracción por esta caja musical, e incluso muchos comenzando clases, se atreven a querer poder tocarlo, aunque a veces poco se sepa de este mismo. 
+                       Es por eso que mediante esta pequeña página, se quiere dar a conocer características únicas que datan desde la historia, partes del violín y algunos artistas que han logrado cautivarnos con sus maravillosas melodías.
+                    </p>
+                </div>
+                <div class="imagen_inicial">
+           		    <img src="img/Imagen1.jpg" title="Violín"/>
+                </div>
+            </section>
+
+            <section id="historia">
+   	      		<h2>Historia</h2> 
+   	      	<div id="texto_historia">	        	    
+      	         <p>
+         	        	El violín surgió en Italia a comienzos del Siglo XVI. Parece haber evolucionado a partir de dos instrumentos de cuerda frotada: la fídula, también denominada viella y rebec, y la lira da braccio (instrumento como el violín con bordones separados del diapasón). También relacionado con el violín pero no un antecedente directo, es la viola da gamba, instrumento de seis cuerdas con trastes que apareció en Europa antes que el violín y existió junto con él durante unos 200 años. 
+                        Los más importantes violeros fueron los italianos Gasparo (Bertolotti) da Salò y Giovanni Maggini de Brescia y Andrea Amati de Cremona. El arte de la construcción del violín brilló con gran intensidad en el Siglo XVII y comienzos del XVIII en los talleres de los italianos Antonio Stradivarius y Giuseppe Guarneri, ambos de Cremona y del austriaco Jacob Stainer. 
+                        Comparado con los instrumentos modernos, el violín antiguo tenía un mango más grueso, menos inclinado hacia atrás, un diapasón más corto, un puente más bajo y cuerdas hechas sólo de tripa. Los arcos antiguos eran algo diferentes en su diseño de los actuales. Estas características constructivas fueron modificadas en los siglos XVIII y XIX para producir un sonido más duro y brillante. Varios violinistas del Siglo XX han restaurado y empleado instrumentos del siglo XVIII por considerarlos más adecuados para interpretar la música antigua.
+               	</p>
+	            </div>         	             		        		
+   	     		<aside id="imagenes_historia">
+      	      	<div style="text-align: center;">
+         	        	<img src="img/Imagen2.jpg" title="Violín antiguo"/>                
+                    	<img src="img/Imagen3.jpg" title="Violín Imagen"/>
+                  </div>
+               </aside>                                
+            </section>
+    
+            <section id="partes">
+                <h2>Partes</h2>
+                <div id="contenedor_partes">
+                    <div id="imagenes_partes" style="text-align: center;">
+                        <img src="img/PartesViolin.PNG" title="PartesViolin"/>                  
+                   
+                        <img src="img/PartesArco.PNG" title="PartesArco"/>                
+                    </div>
+                    <div id="planilla"> 
+                        Descargue <a href="plant/Plantilla.pdf">aquí</a> plantilla
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section id="artistas">
+                <h2>Artistas</h2>
+                <div id="artista1">
+                    <h3>Nicolo Paganini</h3>
+                    <img src="img/ImagenPaganini.jpg" title="Nicolo Paganini"/>
+                    <p>
+                        (Génova, 1782 - Niza, 1840) Violinista, guitarrista y compositor italiano. Rodeado de una aureola mefistofélica por sus propios contemporáneos, asombrados ante su dominio del instrumento y su vida desordenada y aventurera, Niccolò Paganini fue el violinista por antonomasia del romanticismo. 
+                    </p>
+                    <video controls>
+                        <source src="vid/PaganiniKreisler-LaCampanella.mp4" type="video/mp4"/>
+                    </video>                
+                </div>
+    
+                <div id="artista2">
+                    <h3>David Garrett</h3>
+                    <img src="img/DavidGarret.jpg" title="DavidGarret"/>
+                    <p>
+                        David Bongartz (4 de septiembre de 1980) Nació en Aquisgrán, Alemania. Violinista y modelo alemán, es conocido con el nombre artístico de David Garrett. Hijo de David Garrett y Dove Garrett, su padre es jurista y profesor de violín y su madre es bailarina. David Garret se crió rodeado de la música y desde temprana edad se interesa por esta, al observar a su hermano mayor tocar el violín nace su pasión por el instrumento, el cual aprendió a interpretar desde los 4 años, fue instruido por su padre.
+                    </p>
+                    <video controls>
+                        <source src="vid/DavidGarrett-Dangerous.mp4" type="video/mp4"/>
+                    </video>                
+                </div>
+            </section>
+    
+            <section id="resena">
+                <div class="comentarios">
+                    <form>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
+                        <br/>
+                        <label for="Comentario">Comentario</label>
+                        <textarea name="textarea" placeholder="Ingresa tu comentario" cols="50"></textarea> 
+                        <input type="submit">              
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>Desarrollado por: Sergio Andrés Villegas Pérez - 2021<br/>Universidad Nacional Abierta y a Distancia</p>
+        </footer>
+    </body>
+</html>

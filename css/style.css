@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#inicio{
+    display: block;
+}
+#historia, #partes, #artistas, #resena{
+    display: none;
+}
+
+body{
+    background:  #fbeee6;
+}
+
+header {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background: #ca6f1e;
+}
+
+nav ul {
+  background: #af601a;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+}
+
+nav ul li:hover {
+  background: #ca6f1e;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hide {
+    padding: 16px;
+    font-size: 30px;
+    background: #ca6f1e;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    clear: both;
+    padding: 5px ;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo_inicial{
+	height: 100px;
+	line-height: 100px;	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;    
+}
+
+#titulo_inicial h1{
+	color:  #6e2c00 ;
+}
+
+
+#texto_inicial{
+    width: 100%;    
+    text-align: center;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    align-content: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imagen_inicial{    
+    text-align: center;
+}
+
+.imagen_inicial img{
+    width: 350px;
+}
+
+h2{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #6e2c00;
+	text-align: center;
+	font-size: 30px;
+	margin: 20px;
+}
+
+#texto_historia{
+	font-family: 'Courier New', Courier, monospace;
+	text-align: justify;
+	font-size: 14px;
+}
+
+#imagenes_historia img{
+	width: 35%;
+	max-height: 180px;
+	margin-top: 13px;	
+}
+
+#imagenes_partes{
+	float: left;
+	width: 80%;
+	margin-bottom: 15px;
+}
+
+#imagenes_partes img{
+	height: 370px;
+	width: 385px;
+	margin-bottom: 20px;
+}
+
+#planilla{
+	float: right;
+	width: 20%;
+	margin-bottom: 15px;
+}
+
+#artista1, #artista2{
+	float: left;
+	width: 46%;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 12px;
+	padding: 2% 2%;
+	margin-bottom: 15px;
+}
+
+#artista1 h3, #artista2 h3{
+	font-size: 16px;
+}
+
+#artista1 img, #artista2 img{
+	width: 200px;
+	height: 300px;
+	margin: 10px;
+}
+
+#artista1 video, #artista2 video{
+	width: 75%;
+	margin-top: 15px;
+}
+
+.comentarios{	 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 20px;
+    display: block;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.comentarios input{	
+	margin: 20px;
+}
+
+
+@media (max-width: 767px) {
+  nav ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  nav ul {
+  display: none;
+  }
+
+  #titulo_inicial{
+    height: auto;
+    font-size: 32px;
+    margin-top: 20px;  
+  }  
+  
+  #texto_inicial{  
+      text-align: center;
+      font-size: 16px;
+  }
+
+  .imagen_inicial{
+    margin-bottom: 20px;
+  }
+  
+  .imagen_inicial img{
+      width: 80%;
+  }
+
+  h2{
+    font-size: 26px;
+  }
+  
+  #texto_historia{
+    padding: 0px 15px;
+  }
+  
+  #imagenes_historia img{
+    width: 50%;
+    height: auto;
+    margin: 15px;	
+  }
+
+  #imagenes_partes{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  #imagenes_partes img{
+    height: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  #planilla{
+    width: 100%;
+    text-align: center;
+  }
+
+  #artista1, #artista2{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #artista1 img, #artista2 img{
+    width: 80%;
+    height: auto;
+  }
+  
+  #artista1 video, #artista2 video{
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+ 
+  #texto_inicial{
+      font-size: 16px;
+  }
+  
+  .imagen_inicial{    
+    margin-bottom: 20px;
+  }
+  
+  .imagen_inicial img{
+      width: 75%;
+  }
+  
+  #texto_historia{
+    text-align: left;
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  
+  #imagenes_historia img{
+    width: 45%;
+    margin: 15px 0px;	
+  }
+  
+  #imagenes_partes{
+    width: 100%;
+  }
+  
+  #imagenes_partes img{
+    height: auto;
+    width:85%;
+    margin-bottom: 20px;
+  }
+  
+  #planilla{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #artista1, #artista2{
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #artista1 h3, #artista2 h3{
+    font-size: 25px;
+  }
+  
+  #artista1 img, #artista2 img{
+    width: 30%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  #artista1 video, #artista2 video{
+    width: 60%;
+  }
+
+}
+
+@media (min-width: 1024px){
+  body{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  p{
+    font-size: 18px;
+  }  
+  
+  .imagen_inicial{
+    margin-bottom: 20px;
+  }
+  
+  .imagen_inicial img{
+      width: 50%;
+  }
+
+  h2{
+    font-size: 36px;
+  }
+  
+  #imagenes_historia img{
+    width: 35%;
+    max-height: none;
+    margin: 20px;
+  }
+
+  #contenedor_partes{
+    display: flex;
+    
+    align-items: center;
+  }
+
+  #imagenes_partes{
+    width: 100%;
+  }
+  
+  #imagenes_partes img{
+    height: auto;
+    width: 45%;
+  }
+  
+  #planilla{
+    width: 20%;
+  }
+  
+  #artista1 h3, #artista2 h3{
+    font-size: 20px;
+  }
+  
+  #artista1 img, #artista2 img{
+    width: 60%;
+    height: auto;
+  }
+  
+  #artista1 video, #artista2 video{
+    width: 80%;
+  }
+}
+
+
+
